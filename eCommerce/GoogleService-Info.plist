@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>411288690750-l812j1ti0ikmgerd2hq94fevg7shbnm3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.411288690750-l812j1ti0ikmgerd2hq94fevg7shbnm3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>411288690750-f9bvdukrsbecfanl309u9d7idflf6agl.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBzmpDO6aUbU7lLxAsv2o5trjHaRNVn06M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>411288690750</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jolchaya</string>
+	<key>PROJECT_ID</key>
+	<string>jolchaya-a5fc3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jolchaya-a5fc3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:411288690750:ios:cdc76eca920aa4548af16f</string>
+	<key>DATABASE_URL</key>
+	<string>https://jolchaya-a5fc3.firebaseio.com</string>
+</dict>
+</plist>
