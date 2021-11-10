@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UITableViewController {
     
@@ -27,5 +28,41 @@ class HomeViewController: UITableViewController {
     
     @IBAction func logout(_ sender: Any) {
         print("logout")
+
+//        do {
+//            try Auth.auth().signOut()
+//        } catch let error {
+//            print("sign out failed: \(error)")
+//        }
+        
+        let alert = UIAlertController(
+            title: "Logout alert!",
+            message: "Want to logout?",
+            preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "YES", style: .default, handler: { action in
+            switch action.style{
+                case .default:
+                do {
+                    try Auth.auth().signOut()
+                    self.navigationController?.popToRootViewController(animated: true)
+                } catch let error {
+                    print("sign out failed: \(error)")
+                }
+                
+                case .cancel:
+                print("cancel")
+                
+                case .destructive:
+                print("destructive")
+                
+            @unknown default:
+                print("error")
+            }
+        }))
+        
+        alert.addAction(UIAlertAction(title: "NO", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
     }
 }

@@ -33,7 +33,7 @@ class SignUpViewController: UIViewController {
             } else {
                 print(user)
                 
-                self.performSegue(withIdentifier: "goingToList", sender: nil)
+                self.performSegue(withIdentifier: Constants.segueToGoHome, sender: nil)
                 self.fullName.text = nil
                 self.emailAddress.text = nil
                 self.fullName.text = nil
@@ -66,7 +66,32 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func gobackLoginView(_ sender: UIButton) {
-//        self.dismiss(animated: true, completion: nil)
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+//    // Don't forget to unregister when done
+//    deinit {
+//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardDidShow, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardDidHide, object: nil)
+//    }
+    
+    @objc func keyboardWillShow(notification:NSNotification) {
+        guard let userInfo = notification.userInfo else { return }
+        var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+
+//        var contentInset:UIEdgeInsets = self.scrollView.contentInset
+//        contentInset.bottom = keyboardFrame.size.height + 20
+//        self.scrollView.contentInset = contentInset
+    }
+
+    @objc func keyboardWillHide(notification:NSNotification) {
+//        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+//        self.scrollView.contentInset = contentInset
     }
 }
