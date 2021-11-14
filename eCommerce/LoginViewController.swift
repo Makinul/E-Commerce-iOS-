@@ -10,6 +10,7 @@ import Firebase
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var emailAddress: UITextField!
     @IBOutlet weak var password: UITextField!
     
@@ -18,6 +19,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        registerForKeyboardNotifications()
+        registerGesture()
         
         print("Main view controller")
     }
@@ -78,6 +82,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
+        print("tap on sign up text")
         self.performSegue(withIdentifier: Constants.segueToGoSignUp, sender: nil)
     }
     
@@ -89,6 +94,66 @@ class LoginViewController: UIViewController {
 
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func registerGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+        
+        let leftGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeLeft))
+        leftGesture.direction = .left
+        self.view.addGestureRecognizer(leftGesture)
+        
+        let sRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight))
+        sRight.direction = .right
+        view.addGestureRecognizer(sRight)
+    }
+    
+    // Don't forget to unregister when done
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidHideNotification, object: nil)
+        
+        print("deinit called")
+    }
+    
+    @objc func keyboardWillShow(notification:NSNotification) {
+        guard let userInfo = notification.userInfo else { return }
+        var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+        
+        print("keyboardWillShow")
+        
+        var contentInset:UIEdgeInsets = self.scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height + 25
+        self.scrollView.contentInset = contentInset
+    }
+    
+    @objc func keyboardWillHide(notification:NSNotification) {
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        self.scrollView.contentInset = contentInset
+        print("keyboardWillHide")
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        emailAddress.resignFirstResponder()
+        password.resignFirstResponder()
+        print("dismissKeyboard")
+    }
+    
+    @objc func swipeLeft() {
+        print("swipeLeft")
+    }
+    
+    @objc func swipeRight() {
+        print("swipeRight")
+        self.navigationController?.popViewController(animated: true)
+        
     }
 }
 

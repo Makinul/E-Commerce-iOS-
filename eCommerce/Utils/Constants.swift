@@ -8,8 +8,8 @@
 struct Constants {
     static let keyUserLoggedIn = "userLoggedIn"
     
-    static let segueToGoHome = "goingToHome"
+    static let segueToGoHome = "goingToHome2"
     static let segueToGoLogin = "goingToLogin"
     static let segueToGoSignUp = "goingToSignUp"
-    static let segueToGoScrollView = "goToScrollView"
+    static let segueToGoScrollView = "goingToScrollView2"
 }

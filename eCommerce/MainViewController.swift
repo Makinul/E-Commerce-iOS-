@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
         let preferences = UserDefaults.standard
         
         if preferences.object(forKey: Constants.keyUserLoggedIn) == nil {
-            self.performSegue(withIdentifier: Constants.segueToGoScrollView, sender: nil)
+            self.performSegue(withIdentifier: Constants.segueToGoHome, sender: nil)
         } else {
             let userLoggedIn = preferences.bool(forKey: Constants.keyUserLoggedIn)
             

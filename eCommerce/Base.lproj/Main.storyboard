@@ -32,69 +32,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIm-Z9-ttA" userLabel="appName">
-                                <rect key="frame" x="66.5" y="64" width="281.5" height="76.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="64"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86a-rE-dBI" userLabel="loginButton">
-                                <rect key="frame" x="20" y="711" width="374" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
-                                <connections>
-                                    <action selector="emailPasswordLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DB9-6J-Uzp"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SES-pV-mVA" userLabel="emailAddress">
-                                <rect key="frame" x="20" y="657" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-0f-dNd" userLabel="password">
-                                <rect key="frame" x="20" y="603" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with email and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlE-DD-orz" userLabel="appMoto">
-                                <rect key="frame" x="20" y="160.5" width="374" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LE-h5-awD">
-                                <rect key="frame" x="20" y="762" width="374" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Don't have account?">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nV0-NC-n3w"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sE7-UE-lix">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3pj-b6-eY3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="302"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIm-Z9-ttA" userLabel="appName">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="76.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="64"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with email and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlE-DD-orz" userLabel="appMoto">
+                                                <rect key="frame" x="0.0" y="91.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-0f-dNd" userLabel="password">
+                                                <rect key="frame" x="0.0" y="127" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SES-pV-mVA" userLabel="emailAddress">
+                                                <rect key="frame" x="0.0" y="176" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86a-rE-dBI" userLabel="loginButton">
+                                                <rect key="frame" x="0.0" y="225" width="374" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                                <connections>
+                                                    <action selector="emailPasswordLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DB9-6J-Uzp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LE-h5-awD">
+                                                <rect key="frame" x="0.0" y="271" width="374" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Don't have account?">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nV0-NC-n3w"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3pj-b6-eY3" firstAttribute="top" secondItem="lF9-fX-l31" secondAttribute="top" id="0fF-Yg-Yuz"/>
+                                    <constraint firstItem="3pj-b6-eY3" firstAttribute="trailing" secondItem="lF9-fX-l31" secondAttribute="trailing" id="3YW-Ch-rLG"/>
+                                    <constraint firstItem="3pj-b6-eY3" firstAttribute="width" secondItem="pyG-I1-QUx" secondAttribute="width" id="XmQ-21-Dtg"/>
+                                    <constraint firstItem="3pj-b6-eY3" firstAttribute="leading" secondItem="lF9-fX-l31" secondAttribute="leading" id="rHW-NZ-TcA"/>
+                                    <constraint firstItem="3pj-b6-eY3" firstAttribute="bottom" secondItem="lF9-fX-l31" secondAttribute="bottom" id="xud-rt-EWZ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="lF9-fX-l31"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="pyG-I1-QUx"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="86a-rE-dBI" secondAttribute="bottom" constant="120" id="2X4-HS-sBt"/>
-                            <constraint firstItem="QlE-DD-orz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7YN-EC-5Jp"/>
-                            <constraint firstItem="86a-rE-dBI" firstAttribute="trailing" secondItem="SES-pV-mVA" secondAttribute="trailing" id="A4A-0g-lVY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QlE-DD-orz" secondAttribute="trailing" constant="20" id="BdT-NZ-hKE"/>
-                            <constraint firstItem="86a-rE-dBI" firstAttribute="trailing" secondItem="pJd-0f-dNd" secondAttribute="trailing" id="Enh-x9-PoV"/>
-                            <constraint firstItem="QlE-DD-orz" firstAttribute="top" secondItem="rIm-Z9-ttA" secondAttribute="bottom" constant="20" id="IE6-3n-kqI"/>
-                            <constraint firstItem="86a-rE-dBI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L50-bL-AZO"/>
-                            <constraint firstItem="rIm-Z9-ttA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MRA-O4-1lN"/>
-                            <constraint firstItem="86a-rE-dBI" firstAttribute="leading" secondItem="SES-pV-mVA" secondAttribute="leading" id="PMg-Mr-G9O"/>
-                            <constraint firstItem="rIm-Z9-ttA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QTs-eu-nKM"/>
-                            <constraint firstItem="6LE-h5-awD" firstAttribute="top" secondItem="86a-rE-dBI" secondAttribute="bottom" constant="20" id="QVo-W5-iw4"/>
-                            <constraint firstItem="86a-rE-dBI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RGY-UJ-gal"/>
-                            <constraint firstItem="86a-rE-dBI" firstAttribute="top" secondItem="SES-pV-mVA" secondAttribute="bottom" constant="20" id="Tol-Tw-JVJ"/>
-                            <constraint firstItem="SES-pV-mVA" firstAttribute="top" secondItem="pJd-0f-dNd" secondAttribute="bottom" constant="20" id="X8D-dF-4ec"/>
-                            <constraint firstItem="6LE-h5-awD" firstAttribute="trailing" secondItem="86a-rE-dBI" secondAttribute="trailing" id="iK0-20-9iO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="86a-rE-dBI" secondAttribute="trailing" constant="20" id="sX3-LS-u1e"/>
-                            <constraint firstItem="6LE-h5-awD" firstAttribute="leading" secondItem="86a-rE-dBI" secondAttribute="leading" id="sgE-9d-Rhe"/>
-                            <constraint firstItem="QlE-DD-orz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ty6-e5-ugn"/>
-                            <constraint firstItem="86a-rE-dBI" firstAttribute="leading" secondItem="pJd-0f-dNd" secondAttribute="leading" id="yRu-Sk-nmv"/>
+                            <constraint firstItem="sE7-UE-lix" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bpz-uq-f5c"/>
+                            <constraint firstItem="sE7-UE-lix" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qdh-XD-Fwe"/>
+                            <constraint firstItem="sE7-UE-lix" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sB4-aT-qNm"/>
+                            <constraint firstItem="sE7-UE-lix" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="xCp-qY-1Sf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FjK-DN-SsT"/>
@@ -102,13 +106,282 @@
                     <connections>
                         <outlet property="emailAddress" destination="pJd-0f-dNd" id="lYV-oC-EK3"/>
                         <outlet property="password" destination="SES-pV-mVA" id="sfU-QA-6MU"/>
+                        <outlet property="scrollView" destination="sE7-UE-lix" id="Gr7-5h-M90"/>
                         <segue destination="Bbm-Ti-taF" kind="show" identifier="goingToHome" id="y5w-fo-TH2"/>
                         <segue destination="SDx-Bh-TZf" kind="show" identifier="goingToSignUp" id="eUd-ml-PPs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="78"/>
+            <point key="canvasLocation" x="1350.7246376811595" y="77.678571428571431"/>
+        </scene>
+        <!--Scroll View Controller-->
+        <scene sceneID="oJ2-VU-dYE">
+            <objects>
+                <viewController id="Yts-1G-opo" customClass="ScrollViewController" customModule="eCommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fSA-pN-4XT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAa-z9-FDG">
+                                <rect key="frame" x="10" y="88" width="394" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Hb-Ku-UKj">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="537"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-cg-wDl">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are going to sign in using email address and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Y-nD-WhP">
+                                                <rect key="frame" x="0.0" y="80" width="394" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWE-4K-yzg">
+                                                <rect key="frame" x="0.0" y="141" width="394" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="institute name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cC-Mc-sr7">
+                                                <rect key="frame" x="0.0" y="195" width="394" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFT-pl-f0J">
+                                                <rect key="frame" x="0.0" y="249" width="394" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-Bh-hXJ">
+                                                <rect key="frame" x="0.0" y="303" width="394" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owS-Gf-kA1">
+                                                <rect key="frame" x="0.0" y="357" width="394" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="via-KN-1Zi">
+                                                <rect key="frame" x="0.0" y="411" width="394" height="28.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAc-0b-FTh">
+                                                <rect key="frame" x="0.0" y="459.5" width="394" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaQ-1u-B7J">
+                                                <rect key="frame" x="0.0" y="506" width="394" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8Hb-Ku-UKj" firstAttribute="trailing" secondItem="d3Q-AX-PJ5" secondAttribute="trailing" id="2Tr-Nl-6S3"/>
+                                    <constraint firstItem="8Hb-Ku-UKj" firstAttribute="leading" secondItem="d3Q-AX-PJ5" secondAttribute="leading" id="83D-bW-GZP"/>
+                                    <constraint firstItem="8Hb-Ku-UKj" firstAttribute="top" secondItem="d3Q-AX-PJ5" secondAttribute="top" id="BA7-bz-czl"/>
+                                    <constraint firstItem="8Hb-Ku-UKj" firstAttribute="width" secondItem="Afh-iE-itq" secondAttribute="width" id="OQs-iu-HmK"/>
+                                    <constraint firstItem="8Hb-Ku-UKj" firstAttribute="bottom" secondItem="d3Q-AX-PJ5" secondAttribute="bottom" id="jVX-aq-MgW"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="d3Q-AX-PJ5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Afh-iE-itq"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="erJ-VR-gdQ"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="eAa-z9-FDG" firstAttribute="top" secondItem="erJ-VR-gdQ" secondAttribute="top" id="4ma-3Q-0OG"/>
+                            <constraint firstItem="eAa-z9-FDG" firstAttribute="leading" secondItem="erJ-VR-gdQ" secondAttribute="leading" constant="10" id="9XH-9L-TCi"/>
+                            <constraint firstItem="erJ-VR-gdQ" firstAttribute="bottom" secondItem="eAa-z9-FDG" secondAttribute="bottom" id="KQ3-id-Ztz"/>
+                            <constraint firstItem="eAa-z9-FDG" firstAttribute="trailing" secondItem="erJ-VR-gdQ" secondAttribute="trailing" constant="-10" id="fhI-2Y-mck"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UQ6-4x-lnV"/>
+                    <connections>
+                        <outlet property="scrollView" destination="eAa-z9-FDG" id="JUv-x6-QUn"/>
+                        <outlet property="userName" destination="jWE-4K-yzg" id="UBP-W7-8mf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cYw-VV-buN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="913"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="SUQ-Od-6GU">
+            <objects>
+                <viewController id="eqr-0U-i15" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVz-m6-ibv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybp-mC-5RY">
+                                <rect key="frame" x="10" y="44" width="394" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2kw-J3-4dy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2kw-J3-4dy" firstAttribute="trailing" secondItem="ybp-mC-5RY" secondAttribute="trailing" constant="10" id="2DR-4L-JyX"/>
+                            <constraint firstItem="ybp-mC-5RY" firstAttribute="leading" secondItem="2kw-J3-4dy" secondAttribute="leading" constant="10" id="X7j-ZN-nst"/>
+                            <constraint firstItem="ybp-mC-5RY" firstAttribute="top" secondItem="2kw-J3-4dy" secondAttribute="top" id="qmq-aY-eS3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="GjH-Sb-4qv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDR-EJ-lUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="2792"/>
+        </scene>
+        <!--Watch-->
+        <scene sceneID="PLv-6A-0PV">
+            <objects>
+                <viewController id="6hM-CV-Izg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOT-rU-0eY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-nk-wVq">
+                                <rect key="frame" x="10" y="44" width="394" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JGl-gv-gnb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZHG-nk-wVq" firstAttribute="top" secondItem="JGl-gv-gnb" secondAttribute="top" id="M5i-5o-FjX"/>
+                            <constraint firstItem="JGl-gv-gnb" firstAttribute="trailing" secondItem="ZHG-nk-wVq" secondAttribute="trailing" constant="10" id="Xsk-fb-YGG"/>
+                            <constraint firstItem="ZHG-nk-wVq" firstAttribute="leading" secondItem="JGl-gv-gnb" secondAttribute="leading" constant="10" id="nxW-cH-A9J"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Watch" image="video.bubble.left" catalog="system" id="fid-w0-BNg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8BG-yr-HwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="2792"/>
+        </scene>
+        <!--Group-->
+        <scene sceneID="D1M-21-d9m">
+            <objects>
+                <viewController id="wV1-aA-7py" userLabel="Group" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OzU-ot-WeR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7e-sS-nOU">
+                                <rect key="frame" x="10" y="44" width="394" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X2a-1A-XHd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i7e-sS-nOU" firstAttribute="top" secondItem="X2a-1A-XHd" secondAttribute="top" id="2KW-PS-pEF"/>
+                            <constraint firstItem="X2a-1A-XHd" firstAttribute="trailing" secondItem="i7e-sS-nOU" secondAttribute="trailing" constant="10" id="5IP-Vw-iW7"/>
+                            <constraint firstItem="i7e-sS-nOU" firstAttribute="leading" secondItem="X2a-1A-XHd" secondAttribute="leading" constant="10" id="ZbK-kr-4Us"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Group" image="rectangle.3.group.bubble.left" catalog="system" id="amX-pH-Vq9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ads-MO-V8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766.66666666666674" y="2791.7410714285711"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="Fwp-q9-0xd">
+            <objects>
+                <viewController id="Ji2-6l-FhN" userLabel="Notifications" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jHe-IE-8J0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLl-Vh-gvh">
+                                <rect key="frame" x="10" y="44" width="394" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cyc-a1-61j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KLl-Vh-gvh" firstAttribute="leading" secondItem="cyc-a1-61j" secondAttribute="leading" constant="10" id="DTD-lk-1LU"/>
+                            <constraint firstItem="cyc-a1-61j" firstAttribute="trailing" secondItem="KLl-Vh-gvh" secondAttribute="trailing" constant="10" id="VzG-s5-eT1"/>
+                            <constraint firstItem="KLl-Vh-gvh" firstAttribute="top" secondItem="cyc-a1-61j" secondAttribute="top" id="ynS-Mf-NKB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell.circle" catalog="system" id="X4b-I5-wfB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UtP-Nw-SSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="2792"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="sge-9Q-npO">
+            <objects>
+                <viewController id="USQ-Qc-OeQ" userLabel="Settings" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0KD-k4-kcT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA8-8X-0MC">
+                                <rect key="frame" x="10" y="44" width="394" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h9N-Gq-dQW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h9N-Gq-dQW" firstAttribute="trailing" secondItem="VA8-8X-0MC" secondAttribute="trailing" constant="10" id="FHY-JR-Mt7"/>
+                            <constraint firstItem="VA8-8X-0MC" firstAttribute="top" secondItem="h9N-Gq-dQW" secondAttribute="top" id="u2d-73-5YA"/>
+                            <constraint firstItem="VA8-8X-0MC" firstAttribute="leading" secondItem="h9N-Gq-dQW" secondAttribute="leading" constant="10" id="wRd-mb-T5c"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="slider.vertical.3" catalog="system" id="fic-Ce-De6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0iD-5q-0pO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2041" y="2792"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="nQN-6F-XTT">
+            <objects>
+                <tabBarController storyboardIdentifier="homeStoryBoard" id="Z4p-RX-4mP" customClass="MainTabBarController" customModule="eCommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FkJ-PJ-8u7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eqr-0U-i15" kind="relationship" relationship="viewControllers" id="h9n-OJ-e2d"/>
+                        <segue destination="6hM-CV-Izg" kind="relationship" relationship="viewControllers" id="fUE-AT-Tns"/>
+                        <segue destination="wV1-aA-7py" kind="relationship" relationship="viewControllers" id="gvI-MX-1Bp"/>
+                        <segue destination="Ji2-6l-FhN" kind="relationship" relationship="viewControllers" id="eAC-nt-uvU"/>
+                        <segue destination="USQ-Qc-OeQ" kind="relationship" relationship="viewControllers" id="f9A-5z-scK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWf-Pc-s77" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="2012"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Me7-Mk-642">
@@ -118,16 +391,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tre-gD-NJQ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tre-gD-NJQ">
+                                <rect key="frame" x="10" y="88" width="394" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6R8-jc-zcj">
-                                        <rect key="frame" x="10" y="10" width="414" height="2759.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="1035"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQp-Fe-Enj">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="2759.5"/>
-                                                <mutableString key="text">Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. </mutableString>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="1035"/>
+                                                <mutableString key="text">Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. </mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -136,11 +408,11 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="6R8-jc-zcj" firstAttribute="top" secondItem="Hik-fi-Ta6" secondAttribute="top" constant="10" id="Hup-Yc-qMj"/>
-                                    <constraint firstItem="6R8-jc-zcj" firstAttribute="leading" secondItem="Hik-fi-Ta6" secondAttribute="leading" constant="10" id="LgR-Xu-SzA"/>
-                                    <constraint firstItem="6R8-jc-zcj" firstAttribute="bottom" secondItem="Hik-fi-Ta6" secondAttribute="bottom" constant="10" id="ahY-Yh-vQp"/>
+                                    <constraint firstItem="6R8-jc-zcj" firstAttribute="top" secondItem="Hik-fi-Ta6" secondAttribute="top" id="Hup-Yc-qMj"/>
+                                    <constraint firstItem="6R8-jc-zcj" firstAttribute="leading" secondItem="Hik-fi-Ta6" secondAttribute="leading" id="LgR-Xu-SzA"/>
+                                    <constraint firstItem="6R8-jc-zcj" firstAttribute="bottom" secondItem="Hik-fi-Ta6" secondAttribute="bottom" id="ahY-Yh-vQp"/>
                                     <constraint firstItem="6R8-jc-zcj" firstAttribute="width" secondItem="ihB-MJ-fGE" secondAttribute="width" id="bQH-5c-yub"/>
-                                    <constraint firstItem="6R8-jc-zcj" firstAttribute="trailing" secondItem="Hik-fi-Ta6" secondAttribute="trailing" constant="10" id="boS-bf-mmD"/>
+                                    <constraint firstItem="6R8-jc-zcj" firstAttribute="trailing" secondItem="Hik-fi-Ta6" secondAttribute="trailing" id="boS-bf-mmD"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Hik-fi-Ta6"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ihB-MJ-fGE"/>
@@ -148,6 +420,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q1Q-cy-Ufn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tre-gD-NJQ" firstAttribute="top" secondItem="Q1Q-cy-Ufn" secondAttribute="top" id="2nq-iH-h7G"/>
+                            <constraint firstItem="tre-gD-NJQ" firstAttribute="leading" secondItem="Q1Q-cy-Ufn" secondAttribute="leading" constant="10" id="O3H-jg-RJd"/>
+                            <constraint firstItem="tre-gD-NJQ" firstAttribute="bottom" secondItem="Q1Q-cy-Ufn" secondAttribute="bottom" id="hGv-iA-DzS"/>
+                            <constraint firstItem="tre-gD-NJQ" firstAttribute="trailing" secondItem="Q1Q-cy-Ufn" secondAttribute="trailing" constant="-10" id="mM7-8o-ZoX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lIn-4c-DHQ"/>
                 </viewController>
@@ -295,7 +573,8 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goingToLogin" id="dWs-pO-KWY"/>
                         <segue destination="Bbm-Ti-taF" kind="show" identifier="goingToHome" id="4I6-uV-jGI"/>
-                        <segue destination="QZ3-8S-5fU" kind="show" identifier="goToScrollView" id="nMf-O3-z3v"/>
+                        <segue destination="QZ3-8S-5fU" kind="show" identifier="goingToScrollView" id="nMf-O3-z3v"/>
+                        <segue destination="Yts-1G-opo" kind="show" identifier="goingToScrollView2" id="1tj-Vk-LK0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSp-kN-jxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -409,9 +688,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Opw-pk-MQn"/>
+        <segue reference="4I6-uV-jGI"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="bell.circle" catalog="system" width="128" height="121"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="rectangle.3.group.bubble.left" catalog="system" width="128" height="110"/>
+        <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
+        <image name="video.bubble.left" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

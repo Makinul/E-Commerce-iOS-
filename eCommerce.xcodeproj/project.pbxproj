@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11B51D28A5ABD4C719DB0FD0 /* Pods_eCommerce_eCommerceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F78EBF0B99B7CDE5604966 /* Pods_eCommerce_eCommerceUITests.framework */; };
+		9F28105A2740D64D00280E69 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2810592740D64D00280E69 /* ScrollViewController.swift */; };
+		9F28105D2741166500280E69 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28105C2741166500280E69 /* MainTabBarController.swift */; };
+		9F28105F274124EB00280E69 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F28105E274124EB00280E69 /* Home.storyboard */; };
 		9F4F0409273B8347004CE90A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F0408273B8347004CE90A /* Constants.swift */; };
 		9F6398B6272D5D3D00DAAED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6398B5272D5D3D00DAAED8 /* AppDelegate.swift */; };
 		9F6398B8272D5D3D00DAAED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6398B7272D5D3D00DAAED8 /* SceneDelegate.swift */; };
@@ -46,6 +49,9 @@
 /* Begin PBXFileReference section */
 		07612CEC8F5C40A5B92A0C61 /* Pods-eCommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-eCommerceTests/Pods-eCommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0BF9F1A7EA87DF6774922B75 /* Pods_eCommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eCommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2810592740D64D00280E69 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		9F28105C2741166500280E69 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9F28105E274124EB00280E69 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		9F4F0408273B8347004CE90A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9F6398B2272D5D3C00DAAED8 /* eCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eCommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6398B5272D5D3D00DAAED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +130,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9F28105B2741161000280E69 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9F28105E274124EB00280E69 /* Home.storyboard */,
+				9F28105C2741166500280E69 /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		9F4F0407273B82C8004CE90A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +172,7 @@
 		9F6398B4272D5D3C00DAAED8 /* eCommerce */ = {
 			isa = PBXGroup;
 			children = (
+				9F28105B2741161000280E69 /* Main */,
 				9F4F0407273B82C8004CE90A /* Utils */,
 				9F6398B5272D5D3D00DAAED8 /* AppDelegate.swift */,
 				9F6398B7272D5D3D00DAAED8 /* SceneDelegate.swift */,
@@ -164,6 +180,7 @@
 				9F8F97D02737D1C400253404 /* SignUpViewController.swift */,
 				9FA0B3AE273A894700E3C038 /* MainViewController.swift */,
 				9F8F97D22737E5F300253404 /* HomeViewController.swift */,
+				9F2810592740D64D00280E69 /* ScrollViewController.swift */,
 				9F6398BB272D5D3D00DAAED8 /* Main.storyboard */,
 				9F6398BE272D5D4100DAAED8 /* Assets.xcassets */,
 				9F6398C0272D5D4100DAAED8 /* LaunchScreen.storyboard */,
@@ -300,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6398C2272D5D4100DAAED8 /* LaunchScreen.storyboard in Resources */,
+				9F28105F274124EB00280E69 /* Home.storyboard in Resources */,
 				9F698ABB2732590800F86955 /* GoogleService-Info.plist in Resources */,
 				9F6398BF272D5D4100DAAED8 /* Assets.xcassets in Resources */,
 				9F6398BD272D5D3D00DAAED8 /* Main.storyboard in Resources */,
@@ -432,7 +450,9 @@
 			files = (
 				9FA0B3AF273A894700E3C038 /* MainViewController.swift in Sources */,
 				9F8F97D32737E5F300253404 /* HomeViewController.swift in Sources */,
+				9F28105D2741166500280E69 /* MainTabBarController.swift in Sources */,
 				9F6398BA272D5D3D00DAAED8 /* LoginViewController.swift in Sources */,
+				9F28105A2740D64D00280E69 /* ScrollViewController.swift in Sources */,
 				9F6398B6272D5D3D00DAAED8 /* AppDelegate.swift in Sources */,
 				9F4F0409273B8347004CE90A /* Constants.swift in Sources */,
 				9F8F97D12737D1C400253404 /* SignUpViewController.swift in Sources */,
