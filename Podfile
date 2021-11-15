@@ -19,6 +19,7 @@ target 'eCommerce' do
   # add the Firebase
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   pod 'Firebase/Firestore'
   # Optionally, include the Swift extensions if you're using Swift.
 #  pod 'FirebaseFirestoreSwift'
