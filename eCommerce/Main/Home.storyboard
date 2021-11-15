@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Tab Bar Controller-->
+        <!--Home-->
         <scene sceneID="Ksu-z8-zgh">
             <objects>
-                <tabBarController storyboardIdentifier="homeStoryBoard" id="VGI-5R-qwc" customClass="MainTabBarController" customModule="eCommerce" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="home" title="Home" id="VGI-5R-qwc" customClass="MainTabBarController" customModule="eCommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MkF-i8-Xc7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -45,7 +45,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ig9-us-f0t"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hhu-gd-8oC" firstAttribute="top" secondItem="ig9-us-f0t" secondAttribute="top" id="bSk-Mq-zuP"/>
                             <constraint firstItem="ig9-us-f0t" firstAttribute="trailing" secondItem="hhu-gd-8oC" secondAttribute="trailing" constant="10" id="gSC-MP-TLd"/>
@@ -74,7 +74,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4lr-1f-GLz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4lr-1f-GLz" firstAttribute="trailing" secondItem="XDt-Rf-c4U" secondAttribute="trailing" constant="10" id="Gfy-be-fU9"/>
                             <constraint firstItem="XDt-Rf-c4U" firstAttribute="leading" secondItem="4lr-1f-GLz" secondAttribute="leading" constant="10" id="hQe-aH-mTG"/>
@@ -90,7 +90,7 @@
         <!--Group-->
         <scene sceneID="oJA-Sk-cHU">
             <objects>
-                <viewController id="Zpk-rs-o0v" userLabel="Group" sceneMemberID="viewController">
+                <viewController id="Zpk-rs-o0v" userLabel="Group" customClass="GroupViewController" customModule="eCommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EPO-r7-5VQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

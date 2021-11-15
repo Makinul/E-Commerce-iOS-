@@ -65,4 +65,15 @@ class HomeViewController: UITableViewController {
         self.present(alert, animated: true, completion: nil)
         
     }
+    
+    @IBAction func addItem(_ sender: UIBarButtonItem) {
+//        let nController = MainTabBarController()
+//        self.navigationController?.pushViewController(nController, animated: true)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let nController = storyBoard.instantiateViewController(withIdentifier: "home") as! MainTabBarController
+//        self.present(nController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nController, animated: true)
+        print("addItem")
+    }
 }
