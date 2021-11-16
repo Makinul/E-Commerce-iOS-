@@ -110,24 +110,64 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IMA-e8-33A">
-                                <rect key="frame" x="10" y="80" width="394" height="733"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="DV9-53-UM2" customClass="GroupTableViewCell" customModule="eCommerce" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DV9-53-UM2" id="9Ae-sZ-0TJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewM-BY-NJY">
+                                                    <rect key="frame" x="20" y="11.5" width="374" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ewM-BY-NJY" secondAttribute="bottom" constant="0.5" id="Tsn-z9-Lev"/>
+                                                <constraint firstItem="ewM-BY-NJY" firstAttribute="leading" secondItem="9Ae-sZ-0TJ" secondAttribute="leadingMargin" id="qfl-aE-rNY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ewM-BY-NJY" secondAttribute="trailing" id="xza-ld-SXX"/>
+                                                <constraint firstItem="ewM-BY-NJY" firstAttribute="top" secondItem="9Ae-sZ-0TJ" secondAttribute="topMargin" constant="0.5" id="z4q-CM-PWi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.99074860909999996" green="1" blue="0.72169160580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="bioLabel" destination="ewM-BY-NJY" id="k7b-BM-VjK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="TYb-UA-Q7A" userLabel="Refresher">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D7n-bV-9o3">
+                                <rect key="frame" x="373.5" y="52.5" width="20.5" height="18.5"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4lr-1f-GLz"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="TYb-UA-Q7A" firstAttribute="centerY" secondItem="fKM-at-yi4" secondAttribute="centerY" id="0J0-Yu-h4s"/>
                             <constraint firstItem="4lr-1f-GLz" firstAttribute="trailing" secondItem="XDt-Rf-c4U" secondAttribute="trailing" constant="10" id="Gfy-be-fU9"/>
+                            <constraint firstItem="TYb-UA-Q7A" firstAttribute="centerX" secondItem="fKM-at-yi4" secondAttribute="centerX" id="NAk-OI-L0X"/>
                             <constraint firstItem="4lr-1f-GLz" firstAttribute="bottom" secondItem="IMA-e8-33A" secondAttribute="bottom" id="OlP-as-Qez"/>
                             <constraint firstItem="IMA-e8-33A" firstAttribute="top" secondItem="XDt-Rf-c4U" secondAttribute="bottom" id="c1T-os-uHK"/>
-                            <constraint firstItem="IMA-e8-33A" firstAttribute="leading" secondItem="4lr-1f-GLz" secondAttribute="leading" constant="10" id="cRO-Pv-9rm"/>
+                            <constraint firstItem="IMA-e8-33A" firstAttribute="leading" secondItem="4lr-1f-GLz" secondAttribute="leading" id="cRO-Pv-9rm"/>
                             <constraint firstItem="XDt-Rf-c4U" firstAttribute="leading" secondItem="4lr-1f-GLz" secondAttribute="leading" constant="10" id="hQe-aH-mTG"/>
+                            <constraint firstItem="D7n-bV-9o3" firstAttribute="centerY" secondItem="XDt-Rf-c4U" secondAttribute="centerY" id="kNR-Uo-60v"/>
                             <constraint firstItem="XDt-Rf-c4U" firstAttribute="top" secondItem="4lr-1f-GLz" secondAttribute="top" id="sMW-eI-4HY"/>
-                            <constraint firstItem="4lr-1f-GLz" firstAttribute="trailing" secondItem="IMA-e8-33A" secondAttribute="trailing" constant="10" id="xsa-SL-9GZ"/>
+                            <constraint firstItem="4lr-1f-GLz" firstAttribute="trailing" secondItem="IMA-e8-33A" secondAttribute="trailing" id="xsa-SL-9GZ"/>
+                            <constraint firstItem="4lr-1f-GLz" firstAttribute="trailing" secondItem="D7n-bV-9o3" secondAttribute="trailing" constant="20" id="yL5-CU-NY4"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="aWu-wV-CeE"/>
                     <connections>
+                        <outlet property="refresher" destination="TYb-UA-Q7A" id="LeO-ku-Qui"/>
                         <outlet property="tableView" destination="IMA-e8-33A" id="dXd-49-M5j"/>
                     </connections>
                 </viewController>
@@ -229,6 +269,7 @@
     <resources>
         <image name="bell.circle" catalog="system" width="128" height="121"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="rectangle.3.group.bubble.left" catalog="system" width="128" height="110"/>
         <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
         <image name="video.bubble.left" catalog="system" width="128" height="110"/>

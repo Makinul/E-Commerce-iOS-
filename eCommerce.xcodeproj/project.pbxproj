@@ -14,6 +14,9 @@
 		9F28106327422A1100280E69 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28106227422A1000280E69 /* GroupViewController.swift */; };
 		9F281066274251C100280E69 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F281065274251C100280E69 /* Product.swift */; };
 		9F28106827425EA700280E69 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28106727425EA700280E69 /* HomeTableViewController.swift */; };
+		9F28106C2743A3CB00280E69 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28106A2743A3CB00280E69 /* HomeTableViewCell.swift */; };
+		9F28106D2743A3CB00280E69 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F28106B2743A3CB00280E69 /* HomeTableViewCell.xib */; };
+		9F2810702743B6EF00280E69 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F28106F2743B6EF00280E69 /* GroupTableViewCell.swift */; };
 		9F4F0409273B8347004CE90A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F0408273B8347004CE90A /* Constants.swift */; };
 		9F6398B6272D5D3D00DAAED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6398B5272D5D3D00DAAED8 /* AppDelegate.swift */; };
 		9F6398B8272D5D3D00DAAED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6398B7272D5D3D00DAAED8 /* SceneDelegate.swift */; };
@@ -58,6 +61,9 @@
 		9F28106227422A1000280E69 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		9F281065274251C100280E69 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9F28106727425EA700280E69 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		9F28106A2743A3CB00280E69 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		9F28106B2743A3CB00280E69 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		9F28106F2743B6EF00280E69 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		9F4F0408273B8347004CE90A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9F6398B2272D5D3C00DAAED8 /* eCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eCommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6398B5272D5D3D00DAAED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 		9F28105B2741161000280E69 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9F28106E2743B6C500280E69 /* MainTableCell */,
 				9F28105E274124EB00280E69 /* Home.storyboard */,
 				9F28105C2741166500280E69 /* MainTabBarController.swift */,
 				9F28106227422A1000280E69 /* GroupViewController.swift */,
@@ -153,6 +160,23 @@
 				9F281065274251C100280E69 /* Product.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9F2810692743A37D00280E69 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F28106A2743A3CB00280E69 /* HomeTableViewCell.swift */,
+				9F28106B2743A3CB00280E69 /* HomeTableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		9F28106E2743B6C500280E69 /* MainTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F28106F2743B6EF00280E69 /* GroupTableViewCell.swift */,
+			);
+			path = MainTableCell;
 			sourceTree = "<group>";
 		};
 		9F4F0407273B82C8004CE90A /* Utils */ = {
@@ -199,6 +223,7 @@
 				9FA0B3AE273A894700E3C038 /* MainViewController.swift */,
 				9F8F97D22737E5F300253404 /* HomeViewController.swift */,
 				9F2810592740D64D00280E69 /* ScrollViewController.swift */,
+				9F2810692743A37D00280E69 /* TableCell */,
 				9F6398BB272D5D3D00DAAED8 /* Main.storyboard */,
 				9F6398BE272D5D4100DAAED8 /* Assets.xcassets */,
 				9F698ABA2732590800F86955 /* GoogleService-Info.plist */,
@@ -337,6 +362,7 @@
 				9F28105F274124EB00280E69 /* Home.storyboard in Resources */,
 				9F698ABB2732590800F86955 /* GoogleService-Info.plist in Resources */,
 				9F6398BF272D5D4100DAAED8 /* Assets.xcassets in Resources */,
+				9F28106D2743A3CB00280E69 /* HomeTableViewCell.xib in Resources */,
 				9F6398BD272D5D3D00DAAED8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,10 +493,12 @@
 			files = (
 				9F28106827425EA700280E69 /* HomeTableViewController.swift in Sources */,
 				9FA0B3AF273A894700E3C038 /* MainViewController.swift in Sources */,
+				9F28106C2743A3CB00280E69 /* HomeTableViewCell.swift in Sources */,
 				9F8F97D32737E5F300253404 /* HomeViewController.swift in Sources */,
 				9F28105D2741166500280E69 /* MainTabBarController.swift in Sources */,
 				9F6398BA272D5D3D00DAAED8 /* LoginViewController.swift in Sources */,
 				9F28106327422A1100280E69 /* GroupViewController.swift in Sources */,
+				9F2810702743B6EF00280E69 /* GroupTableViewCell.swift in Sources */,
 				9F281066274251C100280E69 /* Product.swift in Sources */,
 				9F28105A2740D64D00280E69 /* ScrollViewController.swift in Sources */,
 				9F6398B6272D5D3D00DAAED8 /* AppDelegate.swift in Sources */,
