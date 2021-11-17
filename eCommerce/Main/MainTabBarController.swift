@@ -31,5 +31,13 @@ class MainTabBarController: UITabBarController {
         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
 //        self.navigationItem.hidesBackButton = true
+        
+//        let backItem = UIBarButtonItem()
+//        backItem.title = "Something Else"
+//        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
+        
+//        let backButton = UIBarButtonItem()
+//        backButton.title = "My Back Button Title"
+//        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
 }

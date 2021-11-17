@@ -16,6 +16,8 @@ class HomeViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        print("Home View Controller")
     }
     
     override func viewWillDisappear(_ animated: Bool) {

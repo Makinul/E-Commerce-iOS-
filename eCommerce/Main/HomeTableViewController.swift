@@ -52,6 +52,10 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.estimatedRowHeight = 600
 
         registerTableViewCells()
+        
+        // in your viewDidLoad or viewWillAppear
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "Something Else", style: .plain, target: nil, action: nil)
     }
     
     private func registerTableViewCells() {
@@ -87,8 +91,24 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
             withIdentifier: "Cell",
             for: indexPath) as! GroupTableViewCell
         let product = productArray[indexPath.row]
-        cell.bioLabel.text = product.url
+        
+        cell.auteurImageView.image = UIImage(named: "halloween")
+        
+        cell.name.text = product.name
+        cell.name.textColor = .black
+        cell.name.textAlignment = .center
+        
+        cell.source.text = product.url
+        cell.source.textColor = UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.0)
+        cell.source.font = UIFont.italicSystemFont(ofSize: cell.source.font.pointSize)
+        
+        cell.bioLabel.text = product.icon
         cell.bioLabel.textColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
+        
+        cell.selectionStyle = .none
+
+//        cell.auteurImageView.layer.cornerRadius = cell.auteurImageView.frame.size.width / 2
+
         return cell
     }
     
@@ -145,5 +165,15 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Something"
+        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
+        if let destination = segue.destination as? DetailsViewController2,
+           let indexPath = tableView.indexPathForSelectedRow {
+            destination.selectedProduct = productArray[indexPath.row]
+        }
     }
 }

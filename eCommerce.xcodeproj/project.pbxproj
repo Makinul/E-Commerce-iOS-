@@ -31,6 +31,9 @@
 		9F8F97D12737D1C400253404 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F97D02737D1C400253404 /* SignUpViewController.swift */; };
 		9F8F97D32737E5F300253404 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F97D22737E5F300253404 /* HomeViewController.swift */; };
 		9FA0B3AF273A894700E3C038 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0B3AE273A894700E3C038 /* MainViewController.swift */; };
+		9FEF0FD82744DA850071E0AA /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF0FD72744DA850071E0AA /* FilmTableViewCell.swift */; };
+		9FEF0FDA2744E8040071E0AA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF0FD92744E8040071E0AA /* DetailsViewController.swift */; };
+		9FEF0FDC274502DA0071E0AA /* DetailsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF0FDB274502DA0071E0AA /* DetailsViewController2.swift */; };
 		DA7EE6A5AABAE1013FA95595 /* Pods_eCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4D4C12341958AEBB9CC112 /* Pods_eCommerce.framework */; };
 		DF48420881EE0659F1F48C5C /* Pods_eCommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF9F1A7EA87DF6774922B75 /* Pods_eCommerceTests.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +85,9 @@
 		9F8F97D02737D1C400253404 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9F8F97D22737E5F300253404 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9FA0B3AE273A894700E3C038 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9FEF0FD72744DA850071E0AA /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		9FEF0FD92744E8040071E0AA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9FEF0FDB274502DA0071E0AA /* DetailsViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController2.swift; sourceTree = "<group>"; };
 		AD4D4C12341958AEBB9CC112 /* Pods_eCommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eCommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA99E10FB012D31993590A7D /* Pods-eCommerce-eCommerceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerce-eCommerceUITests.debug.xcconfig"; path = "Target Support Files/Pods-eCommerce-eCommerceUITests/Pods-eCommerce-eCommerceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDC2FA7FAF9912607865FFB7 /* Pods-eCommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerce.release.xcconfig"; path = "Target Support Files/Pods-eCommerce/Pods-eCommerce.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +156,8 @@
 				9F28105C2741166500280E69 /* MainTabBarController.swift */,
 				9F28106227422A1000280E69 /* GroupViewController.swift */,
 				9F28106727425EA700280E69 /* HomeTableViewController.swift */,
+				9FEF0FD92744E8040071E0AA /* DetailsViewController.swift */,
+				9FEF0FDB274502DA0071E0AA /* DetailsViewController2.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				9F28106F2743B6EF00280E69 /* GroupTableViewCell.swift */,
+				9FEF0FD72744DA850071E0AA /* FilmTableViewCell.swift */,
 			);
 			path = MainTableCell;
 			sourceTree = "<group>";
@@ -493,6 +502,7 @@
 			files = (
 				9F28106827425EA700280E69 /* HomeTableViewController.swift in Sources */,
 				9FA0B3AF273A894700E3C038 /* MainViewController.swift in Sources */,
+				9FEF0FDC274502DA0071E0AA /* DetailsViewController2.swift in Sources */,
 				9F28106C2743A3CB00280E69 /* HomeTableViewCell.swift in Sources */,
 				9F8F97D32737E5F300253404 /* HomeViewController.swift in Sources */,
 				9F28105D2741166500280E69 /* MainTabBarController.swift in Sources */,
@@ -500,7 +510,9 @@
 				9F28106327422A1100280E69 /* GroupViewController.swift in Sources */,
 				9F2810702743B6EF00280E69 /* GroupTableViewCell.swift in Sources */,
 				9F281066274251C100280E69 /* Product.swift in Sources */,
+				9FEF0FD82744DA850071E0AA /* FilmTableViewCell.swift in Sources */,
 				9F28105A2740D64D00280E69 /* ScrollViewController.swift in Sources */,
+				9FEF0FDA2744E8040071E0AA /* DetailsViewController.swift in Sources */,
 				9F6398B6272D5D3D00DAAED8 /* AppDelegate.swift in Sources */,
 				9F4F0409273B8347004CE90A /* Constants.swift in Sources */,
 				9F8F97D12737D1C400253404 /* SignUpViewController.swift in Sources */,

@@ -21,5 +21,7 @@ class GroupTableViewCell: UITableViewCell {
 //    }
     
     @IBOutlet weak var bioLabel: UILabel!
-
+    @IBOutlet weak var auteurImageView: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var source: UILabel!
 }

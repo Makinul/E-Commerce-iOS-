@@ -517,6 +517,56 @@
             </objects>
             <point key="canvasLocation" x="3272" y="-1136"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="UvW-34-Ies">
+            <objects>
+                <viewController id="yB0-Wf-8iq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uhM-vT-rNq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltp-Pc-FJO">
+                                <rect key="frame" x="10" y="44" width="394" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RcP-bH-ZdJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="1035"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hid-Bb-zv8">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="1035"/>
+                                                <string key="text">Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. Unique Quality Jewelry Bangladesh, Earring, Necklaces, Bracelets, Bags and Watches. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RcP-bH-ZdJ" firstAttribute="width" secondItem="rBm-67-37j" secondAttribute="width" id="Gzk-lp-nP6"/>
+                                    <constraint firstItem="RcP-bH-ZdJ" firstAttribute="bottom" secondItem="lh9-OU-3uT" secondAttribute="bottom" id="PQz-Gb-HPv"/>
+                                    <constraint firstItem="RcP-bH-ZdJ" firstAttribute="trailing" secondItem="lh9-OU-3uT" secondAttribute="trailing" id="dgv-V7-eFh"/>
+                                    <constraint firstItem="RcP-bH-ZdJ" firstAttribute="top" secondItem="lh9-OU-3uT" secondAttribute="top" id="mPH-iy-yJt"/>
+                                    <constraint firstItem="RcP-bH-ZdJ" firstAttribute="leading" secondItem="lh9-OU-3uT" secondAttribute="leading" id="nWg-ko-yBO"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="lh9-OU-3uT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="rBm-67-37j"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9nd-bn-Fhy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ltp-Pc-FJO" firstAttribute="top" secondItem="9nd-bn-Fhy" secondAttribute="top" id="7Fg-GT-UIv"/>
+                            <constraint firstItem="Ltp-Pc-FJO" firstAttribute="leading" secondItem="9nd-bn-Fhy" secondAttribute="leading" constant="10" id="Ppz-m5-2sv"/>
+                            <constraint firstItem="Ltp-Pc-FJO" firstAttribute="trailing" secondItem="9nd-bn-Fhy" secondAttribute="trailing" constant="-10" id="es0-HC-7yY"/>
+                            <constraint firstItem="Ltp-Pc-FJO" firstAttribute="bottom" secondItem="9nd-bn-Fhy" secondAttribute="bottom" id="mIP-Tr-hpr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qQv-DI-atH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5W8-hc-k4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-968" y="913"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="4I6-uV-jGI"/>
